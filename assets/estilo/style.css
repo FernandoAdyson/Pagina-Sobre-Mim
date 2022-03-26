@@ -278,3 +278,57 @@ h1.section-title {
   margin-bottom: 4rem;
   margin-top: 5rem;
 }
+
+@media (max-width: 490px) {
+  .logo {
+    width: auto;
+  }
+  .title {
+    position: relative;
+    right: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+
+  .navbar .lista {
+    display: grid;
+    width: 6rem;
+    margin-left: -4rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--detalhes);
+    border-top: 2px solid var(--detalhes);
+  }
+
+  .navbar .logo {
+    margin-top: 1rem;
+    margin-right: 2.6rem;
+    justify-content: center;
+  }
+
+  .help {
+    position: relative;
+    left: 1.2rem;
+  }
+
+  .card {
+    height: auto;
+    top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .text-sobre {
+    display: block;
+    position: relative;
+    padding: 4rem;
+    top: -3rem;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 1rem;
+  }
+}
