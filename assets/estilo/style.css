@@ -1,0 +1,280 @@
+/*----------- RESET -----------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*----------- ROOT-----------*/
+:root {
+  --detalhes: #9d90c5;
+  --fundonavbar: #473955;
+  --fundocorpo: #150542;
+}
+
+/*----------- HEADER-----------*/
+
+.header-container {
+  width: auto;
+  height: 7rem;
+  /*border-bottom: 0px solid black;*/
+}
+
+.header-container .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  font: 700 1rem "Poppins", "sans-serif";
+  background: var(--fundonavbar);
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.navbar .link {
+  margin-right: 1.8rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.navbar .lista {
+  display: inline-flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 1rem;
+  border-bottom: 2px solid var(--detalhes);
+  border-top: 2px solid var(--detalhes);
+}
+
+.lista {
+  list-style: none;
+}
+
+.navbar .logo img {
+  width: 5rem;
+}
+
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo .title {
+  margin-left: 2rem;
+  color: var(--detalhes);
+}
+
+.header-container {
+  color: var(--detalhes);
+}
+
+.header-container .logo .span {
+  color: rgb(255, 255, 255);
+}
+
+.header-container .navbar a:hover {
+  color: #dadadac7;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: left;
+  }
+
+  .navbar .lista {
+    display: grid;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--detalhes);
+    border-top: 2px solid var(--detalhes);
+  }
+
+  .navbar .logo {
+    margin-top: 1rem;
+    margin-right: 2.6rem;
+    justify-content: center;
+  }
+
+  .help {
+    position: relative;
+    left: 1.2rem;
+  }
+}
+
+/*----------- MAIN -----------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body-container {
+  background-color: var(--fundocorpo);
+  width: auto;
+  height: auto;
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+}
+
+.cartoes {
+  position: relative;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  width: 60rem;
+  height: 30rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.171);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.548);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+}
+
+h1.section-title {
+  position: relative;
+  top: 1rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.8rem;
+}
+
+.sub-title {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  position: relative;
+  top: 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+}
+
+.text {
+  position: relative;
+  padding: 2rem;
+  top: 6rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.linguagens {
+  position: relative;
+  top: 0rem;
+  font-size: 1rem;
+}
+
+.icons {
+  margin-top: 11rem;
+}
+
+.text-sobre {
+  display: block;
+  position: relative;
+  padding: 4rem;
+  top: -3rem;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.li {
+  margin: 1.5rem;
+  text-align: justify;
+}
+
+.card-contato {
+  width: 60rem;
+  height: 15rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.171);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.548);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+}
+
+.contato {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 3rem;
+}
+
+.enviar {
+  position: relative;
+  left: 5.5rem;
+  color: white;
+}
+
+.enviar {
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.enviar:hover {
+  transform: rotate(360deg);
+}
+
+@media (max-width: 980px) {
+  .card {
+    height: auto;
+    top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .text-sobre {
+    display: block;
+    position: relative;
+    padding: 4rem;
+    top: -3rem;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 1rem;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+
+  text-decoration: none;
+}
+.btn::after {
+  content: "↑";
+  font-size: 32px;
+  font-weight: bold;
+  color: aliceblue;
+  transition: margin-top 250ms;
+}
+.btn:hover::after {
+  margin-top: -8px;
+}
+
+/*----------- Footer -----------*/
+
+.footer {
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+}
