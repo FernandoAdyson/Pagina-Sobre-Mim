@@ -191,7 +191,7 @@ h1.section-title {
 }
 
 .li {
-  margin: 2rem;
+  margin: 1.5rem;
   text-align: justify;
 }
 
@@ -241,7 +241,7 @@ h1.section-title {
   .text-sobre {
     display: block;
     position: relative;
-    padding: 4rem;
+    padding: 5rem;
     top: -3rem;
     color: #ffffff;
     font-family: "Poppins";
